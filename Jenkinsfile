@@ -1,5 +1,5 @@
   node('docker') {
-    wrap([$class: 'AnsiColorBuildWrapper']) {
+
       try{
         stage('Setup') {
           checkout scm
@@ -35,5 +35,4 @@
           '''
         }
       }
-    }
   }
